@@ -1,17 +1,44 @@
-## 📝 Problem Statement: Laundry Management System
+## 📝 Project Statement: Laundry Management System (LMS)
 
-This project addresses the challenges faced by student hostels, residential colleges, and small-scale laundry services that rely on **manual, paper-based, or non-integrated systems** to manage laundry orders.
+---
 
-### 🎯 Core Issues Addressed:
+### 1. 🎯 Problem Statement
 
-1.  **Inefficiency and Errors in Record Keeping:** Manual records are prone to **human error**, misplacement, and illegibility, making accurate tracking difficult and time-consuming.
-2.  **Difficulty in Tracking and Retrieval:** Without a centralized, searchable system, finding a specific student's order for pick-up or checking historical charges is slow, leading to **poor customer service** and operational delays.
-3.  **Inconsistent and Slow Billing/Cost Calculation:** Manual calculation of the total cost (due to varying prices for shirts, jeans, bedsheets, etc.) is prone to errors, which can result in **disputes** or lost revenue.
-4.  **Lack of Data Persistence:** Physical or simple digital records can be lost or damaged, leading to a complete loss of order history and accountability.
+Student hostels, residential colleges, and small-scale laundry service providers often manage orders using **manual, paper-based, or non-integrated systems**. This archaic method results in several critical operational failures:
 
-### 💡 Proposed Solution
+1.  **High Error Rate:** Manual recording and calculation of charges for diverse items (shirts, jeans, etc.) are prone to human errors, leading to incorrect billing and inventory discrepancies.
+2.  **Inefficient Retrieval:** Searching for a specific student's order or tracking historical charges is time-consuming and cumbersome, resulting in poor customer service and operational delays.
+3.  **Lack of Data Persistence/Integrity:** Paper records can be lost, damaged, or become illegible, leading to a complete loss of transactional history and accountability.
 
-The **Laundry Management System** is a command-line interface (CLI) application that provides a **simple, persistent, and centralized digital platform** to digitize and streamline the core workflow.
+---
 
-* **Key Function:** Automatically calculates the total cost, standardizes order data entry (Roll No., Name, Items), and ensures rapid searching and retrieval of records.
-* **Persistence:** Data is automatically saved to a file (`laundry.txt`) to prevent loss.
+### 2. 🔭 Scope of the Project
+
+The scope of this project is to develop a **simple, persistent, and reliable command-line interface (CLI) application** that fully digitizes the core laundry order workflow.
+
+The system will focus exclusively on **order management and cost calculation** and will not include advanced features like inventory tracking, multi-user accounts, network integration, or graphical user interfaces (GUIs).
+
+---
+
+### 3. 👥 Target Users
+
+The primary users of this system are:
+
+* **Hostel Wardens/Administrators:** For managing resident laundry needs and ensuring correct billing.
+* **Laundry Service Operators/Attendants:** Personnel responsible for accepting, processing, and delivering laundry orders.
+* **Small Business Owners:** Individuals running small, independent laundry shops serving a regular, localized client base.
+
+---
+
+### 4. ✨ High-Level Features
+
+The system implements essential CRUD (Create, Read, Update, Delete) functionality to manage laundry records:
+
+| Feature | Description |
+| :--- | :--- |
+| **Add Order** | Allows for structured data entry (Roll No., Name) and **automated cost calculation** based on selected items and quantities. |
+| **View Orders** | Displays a complete, organized list of all recorded orders. |
+| **Search Order** | Enables quick lookup of any order using the unique **Roll Number**. |
+| **Update Order** | Allows modification of client details and replacement of the item list/re-calculation of the total cost. |
+| **Delete Order** | Permanently removes a specified order from the system. |
+| **Data Persistence** | Automatically saves and loads all data from a local file (`laundry.txt`) between application sessions. |
