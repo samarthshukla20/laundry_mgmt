@@ -1,66 +1,95 @@
-# 🧺 Laundry Management System
+# 🧺 Laundry Management System (LMS)
 
-This is a simple command-line interface (CLI) application written in Python for managing laundry orders for students. It allows users to add, view, search, update, and delete laundry orders, with data persistently stored in a local file.
+## ⭐ Overview of the Project
 
-## ✨ Features
+The **Laundry Management System (LMS)** is a simple, command-line interface (CLI) application developed in Python. It provides a digital solution for small-scale operations, such as student hostels or residential colleges, to manage laundry orders efficiently. The system replaces manual, error-prone record-keeping with an automated digital process for order entry, cost calculation, and data persistence.
 
-* **Add Order:** Record a new laundry order, including student roll number, name, selected items, and calculated total cost.
-* **View Orders:** Display all existing laundry orders.
-* **Search Order:** Find a specific order using the student's roll number.
-* **Update Order:** Modify the student's name and re-select items for an existing order.
-* **Delete Order:** Remove an order from the system using the roll number.
-* **Data Persistence:** Orders are saved to and loaded from a file named `laundry.txt`.
-
-## ⚙️ Setup and Installation
-
-### Prerequisites
-
-* **Python 3.x** must be installed on your system.
-
-### Running the Program
-
-1.  **Save the code:** Save the provided Python code into a file named `laundry_mgmt.py`.
-2.  **Run from terminal:** Open your terminal or command prompt and navigate to the directory where you saved the file. Execute the program using the Python interpreter:
-
-    ```bash
-    python laundry_mgmt.py
-    ```
-
-3.  **Data File:** The program will automatically create a file named **`laundry.txt`** in the same directory to store the orders.
-
-## 🚀 How to Use
-
-When the program starts, it presents a main menu. Enter the number corresponding to the action you wish to perform.
-
-### Main Menu
-
-1. Add Laundry Order
-
-2. View Laundry Orders
-
-3. Search for an Order
-
-4. Update Laundry Order
-
-5. Delete Laundry Order
-
-6. Exit
-
-
-### Action Details
-
-* **1. Add Laundry Order:** Prompts for Roll Number and Name. You will then select items and quantities from a numbered list (1-6). Type **`done`** to finalize the items and calculate the total cost.
-* **2. View Laundry Orders:** Displays a list of all orders, showing Roll Number, Name, Items, and Total Cost.
-* **3. Search for an Order:** Prompts for a **Roll Number** to find and display the details of a specific order.
-* **4. Update Laundry Order:** Prompts for a Roll Number. You can update the student's name and will be guided to re-select **all** items for the order (replacing the old item list).
-* **5. Delete Laundry Order:** Prompts for a **Roll Number** and permanently removes that order from the system and the file.
-* **6. Exit:** Closes the program.
+The core functionality involves managing a list of laundry orders, which are saved to and loaded from a local file (`laundry.txt`), ensuring that all data persists between sessions.
 
 ---
 
-## 💾 Data Format
+## ✨ Features
 
-The program saves and loads data from the `laundry.txt` file using a **Comma Separated Value (CSV)** format. Each line represents a single order:
+The project provides a full range of CRUD (Create, Read, Update, Delete) operations:
 
-```csv
-roll_no,name,items_string,cost_string
+* **Add Order (Create):** Record a new laundry order, automatically calculating the total cost based on the quantity and type of items selected.
+* **View Orders (Read All):** Display a complete list of all recorded laundry orders.
+* **Search Order (Read One):** Quickly find and display the details of a specific order using the student's **Roll Number**.
+* **Update Order (Update):** Modify the student's name and replace the entire item list and recalculate the cost for an existing order.
+* **Delete Order (Delete):** Permanently remove an order from the system and the persistent data file.
+* **Data Persistence:** All orders are automatically saved to and loaded from the `laundry.txt` file.
+
+---
+
+## 🛠️ Technologies/Tools Used
+
+* **Primary Language:** **Python 3.x**
+* **Environment:** Command-Line Interface (CLI)
+* **Data Storage:** Local Flat File (`laundry.txt`) using **CSV format**.
+
+---
+
+## 🚀 Steps to Install & Run the Project
+
+### Prerequisites
+
+* You must have **Python 3.x** installed on your system.
+
+### Installation & Execution
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/samarthshukla20/laundry_mgmt
+    cd laundry-management-system
+    ```
+
+2.  **Save the Code:** Ensure the main program file, `laundry_mgmt.py`, is present in the directory.
+
+3.  **Run the Application:**
+    Execute the Python script directly from your terminal:
+    ```bash
+    python laundry_mgmt.py
+    ```
+4.  **Data File Creation:** The first time you run the application, it will automatically create the **`laundry.txt`** file in the same directory to store your orders.
+
+---
+
+## 🧪 Instructions for Testing
+
+Follow these steps to test the core functionality of the system:
+
+### 1. Test Adding an Order (Option 1)
+
+1.  Choose **Option 1: Add Laundry Order**.
+2.  Enter a unique **Roll Number** (e.g., `101`) and a **Student Name**.
+3.  Select multiple items, such as `1` (Shirt) with quantity `3`, and `3` (Jeans/Pant) with quantity `1`.
+4.  Type **`done`** to finalize. Verify that the **Total Cost** (e.g., Rs 50) is calculated and the success message appears.
+
+### 2. Test Viewing Orders (Option 2)
+
+1.  Choose **Option 2: View Laundry Orders**.
+2.  Verify that the order you just added (Roll No. 101) appears correctly in the list.
+
+### 3. Test Searching for an Order (Option 3)
+
+1.  Choose **Option 3: Search for an Order**.
+2.  Enter the Roll Number (`101`).
+3.  Verify that the correct order details are displayed.
+
+### 4. Test Updating an Order (Option 4)
+
+1.  Choose **Option 4: Update Laundry Order**.
+2.  Enter the Roll Number (`101`).
+3.  Enter an updated name (e.g., "Alice Smith").
+4.  Select a completely new set of items and quantities, then type **`done`**.
+5.  Choose **Option 2: View Laundry Orders** again and verify that the name and cost for Roll No. 101 have been updated.
+
+### 5. Test Deleting an Order (Option 5)
+
+1.  Choose **Option 5: Delete Laundry Order**.
+2.  Enter the Roll Number (`101`).
+3.  Choose **Option 2: View Laundry Orders** and confirm that the order for Roll No. 101 is no longer listed.
+
+---
+
+## 🖼️ Screenshots (Optional)
