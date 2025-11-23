@@ -91,5 +91,3 @@ Follow these steps to test the core functionality of the system:
 3.  Choose **Option 2: View Laundry Orders** and confirm that the order for Roll No. 101 is no longer listed.
 
 ---
-
-## 🖼️ Screenshots (Optional)
