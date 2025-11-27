@@ -1,8 +1,8 @@
-# 🧺 Laundry Management System (LMS)
+# 🧺 Laundry Management System
 
 ## ⭐ Overview of the Project
 
-The **Laundry Management System (LMS)** is a simple, command-line interface (CLI) application developed in Python. It provides a digital solution for small-scale operations, such as student hostels or residential colleges, to manage laundry orders efficiently. The system replaces manual, error-prone record-keeping with an automated digital process for order entry, cost calculation, and data persistence.
+The **Laundry Management System** is a simple, command-line interface (CLI) application developed in Python. It provides a digital solution for small-scale operations, such as student hostels or residential colleges, to manage laundry orders efficiently. The system replaces manual, error-prone record-keeping with an automated digital process for order entry, cost calculation, and data persistence.
 
 The core functionality involves managing a list of laundry orders, which are saved to and loaded from a local file (`laundry.txt`), ensuring that all data persists between sessions.
 
