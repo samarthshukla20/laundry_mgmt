@@ -1,4 +1,4 @@
-## 📝 Project Statement: Laundry Management System (LMS)
+## 📝 Project Statement: Laundry Management System
 
 ---
 
