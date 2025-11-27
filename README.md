@@ -90,4 +90,13 @@ Follow these steps to test the core functionality of the system:
 2.  Enter the Roll Number (`101`).
 3.  Choose **Option 2: View Laundry Orders** and confirm that the order for Roll No. 101 is no longer listed.
 
+## 🖼️ Screenshots / Repository View
+
+This image provides a quick overview of the main repository structure and the application interface.
+
+![GitHub Repository File View](images/code1.png)
+
+![GitHub Repository File View](images/res1.png)
+
+![GitHub Repository File View](images/res2.png)
 ---
