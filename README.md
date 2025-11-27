@@ -40,7 +40,7 @@ The project provides a full range of CRUD (Create, Read, Update, Delete) operati
 1.  **Clone the Repository:**
     ```bash
     git clone https://github.com/samarthshukla20/laundry_mgmt
-    cd laundry-management-system
+    cd laundry-mgmt
     ```
 
 2.  **Save the Code:** Ensure the main program file, `laundry_mgmt.py`, is present in the directory.
