@@ -95,8 +95,8 @@ Follow these steps to test the core functionality of the system:
 This image provides a quick overview of the main repository structure and the application interface.
 
 ![GitHub Repository File View](images/code1.png)
-
+---
 ![GitHub Repository File View](images/res1.png)
-
+---
 ![GitHub Repository File View](images/res2.png)
 ---
